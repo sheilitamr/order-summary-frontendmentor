@@ -4,12 +4,32 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Vite App</title>
   </head>
   <body>
-    <h1>Hola</h1>
-    <img src="./assets/images/cute-cat.webp" alt="" />
+    <div class="main-container">
+      <div class="card-top"></div>
+      <div class="card-info">
+        <h2 class="card-info__title">Order Summary</h2>
+        <p class="card-info__text">
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+        </p>
+        <div class="card-plan">
+          <img src="assets/images/icon-music.svg" alt="icon music" class="card-plan__image" />
+          <div class="card-plan__price-container">
+            <p class="card-plan__text">Annual Plan</p>
+            <p class="card-plan__price">$59.99/year</p>
+          </div>
+          <a href="#" class="card-plan__change"> Change</a>
+        </div>
+        <button id="button-payment" class="button-payment">Proceed to Payment</button>
+        <button id="button-cancel" class="button-cancel">Cancel Order</button>
+      </div>
+    </div>
   </body>
 </html>
